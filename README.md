@@ -42,7 +42,8 @@ pip install -r requirements.txt
 # Run your training script
 python train_model.py
 
-🙌 Acknowledgements
-MIT-BIH Arrhythmia Dataset
 
-Thanks to the open-source community!
+
+
+🙌 Acknowledgements:
+MIT-BIH Arrhythmia Dataset
