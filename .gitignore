@@ -1,0 +1,14 @@
+# Ignore virtual environments
+venv_311/
+
+# Ignore model files
+*.h5
+
+# Ignore datasets
+*.csv
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+.DS_Store
+

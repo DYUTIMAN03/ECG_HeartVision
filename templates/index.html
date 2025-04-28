@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECG Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="vines"></div>
+
+    <nav>
+        <h1>🌿 ECG Classifier</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Upload ECG Image</h2>
+        <p>Classify your heartbeat as <strong>Normal</strong> or <strong>Abnormal</strong></p>
+
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <br><br>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <h3>Prediction: {{ prediction }}</h3>
+            {% if img_url %}
+                <img src="{{ img_url }}" alt="ECG image" class="preview">
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: yourteam@email.com</p>
+        <p>Phone: +91 xxxxxxxxxx</p>
+        <p>Created by: Your Awesome Team 🌱</p>
+    </footer>
+
+</body>
+</html>
