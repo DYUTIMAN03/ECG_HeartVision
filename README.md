@@ -52,7 +52,6 @@ Upload new ECG images using the Flask web UI (`app.py`) and receive instant clas
 
 ## 📸 **UI Snapshots**
 
-## 📸 UI Snapshots
 
 ### 🔹 1. Analysis Pipeline
 <img src="images/44.png" alt="Analysis Pipeline" width="700"/>
