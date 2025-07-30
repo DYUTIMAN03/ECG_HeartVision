@@ -34,56 +34,81 @@ pip install -r requirements.txt
 
 ---
 
-🚦 Workflow
-1.Preprocessing
-Convert raw MIT‑BIH ECG signals into images using ecg_to_image.py.
+## 🚦 **Workflow**
 
-2.Training
-Train or fine-tune VGG16 via train_model.py.
+**1. Preprocessing**  
+Convert raw MIT‑BIH ECG signals into images using `ecg_to_image.py`.
 
-3.Validation & Visualization
-Observe accuracy/loss curves and confusion matrix with visualize.py.
+**2. Training**  
+Train or fine-tune VGG16 via `train_model.py`.
 
-4.Prediction
-Upload new ECG images using the Flask web UI (app.py) and receive instant classification results.
+**3. Validation & Visualization**  
+Observe accuracy/loss curves and confusion matrix with `visualize.py`.
 
----
-
-🛠 Future Improvements
-Support multi-class classification (e.g. arrhythmia subtypes)
-Integrate modern architectures (e.g. Vision Transformers, EfficientNet)
-Deploy using cloud services like Render, Heroku, or AWS
-Extend support to 12‑lead ECG analysis and real‑time data capture
+**4. Prediction**  
+Upload new ECG images using the Flask web UI (`app.py`) and receive instant classification results.
 
 ---
 
-📝 Sample Results
-⚙️ Training vs Validation Loss & Accuracy plots
-📈 Confusion Matrix showing model precision
-🖼️ Sample ECG input images with their predicted labels
+## 📸 **UI Snapshots**
+
+## 📸 UI Snapshots
+
+### 🔹 1. Analysis Pipeline
+<img src="images/44.png" alt="Analysis Pipeline" width="700"/>
+
+### 🔹 2. Comment Input Interface
+<img src="images/55.png" alt="Comment Input" width="700"/>
+
+### 🔹 3. Processed Comments View
+<img src="images/66.png" alt="Processed Comments" width="700"/>
+
+
+
 
 ---
 
-🧪 How to Run Locally
-Launch training:
+## 🛠 **Future Improvements**
+
+- 📌 Support **multi-class classification** (e.g. arrhythmia subtypes)  
+- ⚡ Integrate **modern architectures** (e.g. Vision Transformers, EfficientNet)  
+- ☁️ Deploy using cloud services like **Render**, **Heroku**, or **AWS**  
+- 🧠 Extend support to **12‑lead ECG** analysis and **real‑time signal capture**
+
+---
+
+## 📝 **Sample Results**
+
+- ⚙️ **Training vs Validation Loss & Accuracy** plots  
+- 📈 **Confusion Matrix** showing model precision  
+- 🖼️ **Sample ECG input images** with their predicted labels
+
+---
+
+## 🧪 **How to Run Locally**
+
+**Launch training:**
 python train_model.py
 
-Start the Flask UI:
+**Start the Flask UI:**
 python app.py
 
 ---
 
-📚 References and Acknowledgements
-ECG dataset: MIT‑BIH Arrhythmia Database
-Model: Pre‑trained VGG16 fine‑tuned on ECG images
-Tools: TensorFlow / Keras, Flask, NumPy, Matplotlib
+📚 **References and Acknowledgements**
+
+🧾 Dataset: MIT‑BIH Arrhythmia Database
+
+🧠 Model: Pre-trained VGG16 fine-tuned on ECG images
+
+🧰 Tools: TensorFlow / Keras, Flask, NumPy, Matplotlib
 
 ---
 
-🙌 Credits
+🙌 **Credits**
 Built with ❤️ by Dyutiman Bharadwaj
-Project originally started under repository vgg16-medical-imaging and later renamed to ECG_HeartVision for clarity
 
+Originally developed under the repository vgg16-medical-imaging, later renamed to ECG_HeartVision for clarity and purpose.
 
 
 
