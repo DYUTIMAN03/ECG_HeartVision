@@ -1,63 +1,89 @@
-# ECG Heartbeat Classification Using VGG16
+# 🫀 ECG_HeartVision — ECG Heartbeat Classifier
 
-This project uses a Convolutional Neural Network (CNN) based on the VGG16 architecture to classify ECG heartbeat signals into Normal and Abnormal categories.
+**ECG_HeartVision** is a medical-grade deep‑learning project that uses **VGG16** to classify **ECG heartbeats** into **Normal** or **Abnormal** categories.
 
-## Project Overview
+---
 
-- **Dataset:** MIT-BIH Arrhythmia Dataset
-- **Model:** Fine-tuned VGG16 
-- **Goal:** Classify ECG heartbeats from 1D signal images and Fine-tuned on ECG heartbeat images (Normal vs Abnormal).
+## 🧩 Project Overview
 
-## Technologies Used
+- **Purpose**: Automate the detection of abnormal ECG heartbeat patterns via deep learning applied to ECG‑derived images.
+- **Dataset**: MIT‑BIH Arrhythmia Database (preprocessed into 2D image format).
+- **Model Architecture**: Fine‑tuned **VGG16** for binary ECG classification.
+- **Outputs**:
+  - **Classification**: Normal vs Abnormal
+  - **Visual Insights**: Confusion matrix, training/validation graphs, and sample predictions
+  :contentReference[oaicite:1]{index=1}
 
-- Python 3
-- TensorFlow / Keras
-- NumPy, Pandas
-- Matplotlib, Seaborn
-- Scikit-learn
+---
 
-## Project Workflow
+## 🚀 Features
 
-1. Preprocessing ECG signals
-2. Converting 1D signals to 2D images
-3. Building and fine-tuning the VGG16 model
-4. Training and Validation
-5. Model Evaluation and Metrics
-6. Integrate backend with frontend using flask.
-7. run app.py
+- ✅ Convert ECG signals to 2D images compatible with transfer-learning workflows  
+- ✅ Leverage pre-trained VGG16 fine-tuned on your ECG dataset  
+- ✅ Easy-to-use **Flask** UI to upload ECGs and show instant predictions  
+- 📊 Visualize: Model metrics, graphs, and performance plots  
+- 🔧 Designed for extendability: Add more classes, swap models, or deploy in the cloud  
 
-## 🖼Sample Results
+---
 
-(sample images or graphs will be added here later!)
+## ⚙️ Installation & Setup
 
-## How to Run
-
-# Clone the repository
-git clone https://github.com/DYUTIMAN03/vgg16-medical-imaging.git
-
-# Change directory
-cd your-repo-name
-
-# Install requirements
+git clone https://github.com/DYUTIMAN03/ECG_HeartVision.git
+cd ECG_HeartVision
 pip install -r requirements.txt
 
-# Run your training script
+---
+
+🚦 Workflow
+1.Preprocessing
+Convert raw MIT‑BIH ECG signals into images using ecg_to_image.py.
+
+2.Training
+Train or fine-tune VGG16 via train_model.py.
+
+3.Validation & Visualization
+Observe accuracy/loss curves and confusion matrix with visualize.py.
+
+4.Prediction
+Upload new ECG images using the Flask web UI (app.py) and receive instant classification results.
+
+---
+
+🛠 Future Improvements
+Support multi-class classification (e.g. arrhythmia subtypes)
+Integrate modern architectures (e.g. Vision Transformers, EfficientNet)
+Deploy using cloud services like Render, Heroku, or AWS
+Extend support to 12‑lead ECG analysis and real‑time data capture
+
+---
+
+📝 Sample Results
+⚙️ Training vs Validation Loss & Accuracy plots
+📈 Confusion Matrix showing model precision
+🖼️ Sample ECG input images with their predicted labels
+
+---
+
+🧪 How to Run Locally
+Launch training:
 python train_model.py
 
-## Features
+Start the Flask UI:
+python app.py
 
-- Upload ECG images and get instant predictions.
-- Visualize training graphs.
-- Clean UI using Flask templates.
+---
 
-## 🛠Future Improvements
+📚 References and Acknowledgements
+ECG dataset: MIT‑BIH Arrhythmia Database
+Model: Pre‑trained VGG16 fine‑tuned on ECG images
+Tools: TensorFlow / Keras, Flask, NumPy, Matplotlib
 
-- Improve model accuracy.
-- Add multi-class classification.
-- Deploy to cloud (AWS, Azure, or Render).
+---
+
+🙌 Credits
+Built with ❤️ by Dyutiman Bharadwaj
+Project originally started under repository vgg16-medical-imaging and later renamed to ECG_HeartVision for clarity
 
 
-Acknowledgements:
-MIT-BIH Arrhythmia Dataset
 
-Made with ❤️ and TensorFlow/Keras
+
