@@ -53,13 +53,13 @@ Upload new ECG images using the Flask web UI (`app.py`) and receive instant clas
 ## 📸 **UI Snapshots**
 
 
-### 🔹 1. Analysis Pipeline
+### 🔹    PROJECT MAIN PAGE
 <img src="images/44.png" alt="Analysis Pipeline" width="700"/>
 
-### 🔹 2. Comment Input Interface
+### 🔹    TESTING & RESULT 
 <img src="images/55.png" alt="Comment Input" width="700"/>
 
-### 🔹 3. Processed Comments View
+### 🔹    TESTING & RESULT 
 <img src="images/66.png" alt="Processed Comments" width="700"/>
 
 
